@@ -18,6 +18,13 @@ Estamos usando o vscode para programar com o flutter devido às suas extensões 
 Para criar um projeto flutter no vscode, basta executar Ctrl+Shift+P para abrir a paleta de comandos, pesquisar por flutter e selecionar a opção "Flutter: Create new project",
 escolher a opção aplication, selecionar a pasta onde armazenará o projeto e nomear o nome do projeto, após isso, a base do projeto estará pronta.
 
+Existem diferentes pastas que são criadas nesse processo, varias delas servem para facilitar a integração do aplicativo em várias plataformas, como android e ios, mas a 
+mais importante para nós é a pasta lib, é nela que faremos nosso aplicativo.
+
+Para criar uma pasta no projeto, selecione o botão para criar uma pasta e dê um nome, para criar dentro da pasta lib, clique na pasta lib com o botão direito e seleciona
+o "Nova Pasta...", o mesmo para criar um novo arquivo, seleciona com o botão direito a pasta desejada e seleciona o "Novo Arquivo...", escrever o nome e adicionar o ".dart" no
+final.
+
 
 
 
