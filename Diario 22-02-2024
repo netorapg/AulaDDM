@@ -25,11 +25,14 @@ Para criar uma pasta no projeto, selecione o botão para criar uma pasta e dê u
 o "Nova Pasta...", o mesmo para criar um novo arquivo, seleciona com o botão direito a pasta desejada e seleciona o "Novo Arquivo...", escrever o nome e adicionar o ".dart" no
 final.
 
+para criar o método main, escreve-se "void main(){}", está é a função principal do programa, é através dela que conseguimos executa-lo.
 
+Para executar um único arquivo.dart, deve-se primeiramente instalar a extensão code runner, habilitar para rodar no terminal e clicar no botão de executar.
 
+Variável é um espaço da memória que utilizamos para guardar um valor que pretendemos utilizar no código, seja um valor inteiro(int), 
+quebrado(double), palavras(String), valor verdadeirou ou falso(booblean), etc.
+Ex: int x = 10; String nome = 'Renato'; double valor = 70.5; bool eAprovado = true;
 
-
-
-Variavel é um espaço na memória que reservamos para armazenar um dado
-Um valor que pode variar, hora é um valor, hora é outro - é por issto que chamamos de variável.
-Sintaxe para definir uma variável com tipo explicito: tipo nome_variavel = valor;
+A interpolação, de uma maneira simplificada, serve para que o compilador processe ao invés de imprimir direto ao se usar uma marcação. Por exemplo
+digamos que eu tenha uma variavel chamada String nome = 'Renato'; Caso eu escreva ṕrint('nome'); O compilador irá imprimir "nome", no entanto, se eu escrever
+print('$nome'); O compilador irá processar aquela variável primeiro e então imprimirá "Renato".
