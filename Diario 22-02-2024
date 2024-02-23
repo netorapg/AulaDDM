@@ -22,7 +22,8 @@ Criar um projeto flutter no Vscode:
 5. Nomeie o projeto.
 6. concluído.
 
-Existem diferentes pastas que são criadas nesse processo, varias delas servem para facilitar a integração do aplicativo em várias plataformas, como "android" e "ios", mas a 
+Existem diferentes pastas que são criadas nesse processo, varias delas servem para facilitar a integração do aplicativo em várias plataformas, como "android" e "ios",
+mas a 
 mais importante para nós é a "pasta lib", é nela que faremos nosso aplicativo.
 
 Criar uma pasta na lib:
