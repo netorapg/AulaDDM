@@ -36,3 +36,8 @@ Ex: int x = 10; String nome = 'Renato'; double valor = 70.5; bool eAprovado = tr
 A interpolação, de uma maneira simplificada, serve para que o compilador processe ao invés de imprimir direto ao se usar uma marcação. Por exemplo
 digamos que eu tenha uma variavel chamada String nome = 'Renato'; Caso eu escreva ṕrint('nome'); O compilador irá imprimir "nome", no entanto, se eu escrever
 print('$nome'); O compilador irá processar aquela variável primeiro e então imprimirá "Renato".
+
+Alguns exemplos que podemos citar sobre boas práticas: Mantenha a padronização no nome das variáveis(seja em camelCase, snake_case, etc. Escolha um e se mantenha);
+Defina o nome das variáveis e métodos em um único idioma, de preferência se puder, em inglês; Sempre declare o tipo da variável antes de dar um valor a ela.
+
+
