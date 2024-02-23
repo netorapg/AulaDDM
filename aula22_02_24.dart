@@ -40,6 +40,23 @@ print('${disciplina} ${cargaHoraria} ${professorResponsavel} ${eAtiva} ${quantid
    * Aplique o que aprendeu no seu projeto.
    */
 
+//03-a
+var disciplina = 'Filosofia Alemã';
+var cargaHoraria = 67.8;
+var professorResponsavel = 'Felipe Pondé';
+var eAtiva = true;
+var quantidadeAlunos = 27;
+
+print('Disciplina: '+disciplina+' '+
+'Carga Horária: '+cargaHoraria.toString()+' '+
+'Professor Responsável: '+professorResponsavel+' '+
+'Turma Ativa: '+eAtiva.toString()+' '+
+'Quantidade de Alunos: '+quantidadeAlunos.toString());
+
+print('$disciplina $cargaHoraria $professorResponsavel $eAtiva $quantidadeAlunos');
+
+print('${disciplina} ${cargaHoraria} ${professorResponsavel} ${eAtiva} ${quantidadeAlunos}');
+
 
 /*
 
