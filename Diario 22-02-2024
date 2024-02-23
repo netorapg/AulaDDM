@@ -3,8 +3,6 @@
 Um jornal digital, um aplicativo que simula um jornal impresso, mas digitalizado.
 
 
-
-
 - Faça o material de estudo da aula (criação projeto, pasta lib, 
   criação arquivo, método main, execução, variáveis, tipos de dados, 
   interpolação, boas práticas, variáveis de inferência, 
@@ -15,22 +13,35 @@ Um jornal digital, um aplicativo que simula um jornal impresso, mas digitalizado
 
 Flutter é uma framework voltada para o desenvolvimento mobile, ela é extremamente versátil e prática. 
 Estamos usando o vscode para programar com o flutter devido às suas extensões que facilitam na configuração do ambiente.
-Para criar um projeto flutter no vscode, basta executar Ctrl+Shift+P para abrir a paleta de comandos, pesquisar por flutter e selecionar a opção "Flutter: Create new project",
-escolher a opção aplication, selecionar a pasta onde armazenará o projeto e nomear o nome do projeto, após isso, a base do projeto estará pronta.
 
-Existem diferentes pastas que são criadas nesse processo, varias delas servem para facilitar a integração do aplicativo em várias plataformas, como android e ios, mas a 
-mais importante para nós é a pasta lib, é nela que faremos nosso aplicativo.
+Criar um projeto flutter no Vscode:
+1.Execute o comando Ctrl+Shift+P para acessar a paleta de comandos.
+2.Digite "flutter" e selecione "Flutter: Create New Project".
+3. Escolha a opção "Aplication".
+4. Selecione uma pasta.
+5. Nomeie o projeto.
+6. concluído.
 
-Para criar uma pasta no projeto, selecione o botão para criar uma pasta e dê um nome, para criar dentro da pasta lib, clique na pasta lib com o botão direito e seleciona
-o "Nova Pasta...", o mesmo para criar um novo arquivo, seleciona com o botão direito a pasta desejada e seleciona o "Novo Arquivo...", escrever o nome e adicionar o ".dart" no
-final.
+Existem diferentes pastas que são criadas nesse processo, varias delas servem para facilitar a integração do aplicativo em várias plataformas, como "android" e "ios", mas a 
+mais importante para nós é a "pasta lib", é nela que faremos nosso aplicativo.
+
+Criar uma pasta na lib:
+1.Clique com o botão direito na pasta lib.
+2.Selecione "Nova Pasta...".
+3.Nomeie a pasta e aperte "enter".
+4.Concluído
+
+Criar um arquivo na lib:
+1.Clique com o botão direito na pasta lib.
+2.Selecione "Novo Arquivo...".
+3.Nomeie o arquivo, coloque ".dart" no final e aperte "enter.
+4.Concluído.
 
 para criar o método main, escreve-se "void main(){}", está é a função principal do programa, é através dela que conseguimos executa-lo.
 
 Para executar um único arquivo.dart, deve-se primeiramente instalar a extensão code runner, habilitar para rodar no terminal e clicar no botão de executar.
 
-Variável é um espaço da memória que utilizamos para guardar um valor que pretendemos utilizar no código, seja um valor inteiro(int), 
-quebrado(double), palavras(String), valor verdadeirou ou falso(booblean), etc.
+Variável é um espaço da memória que utilizamos para guardar um valor que pretendemos utilizar no código.
 Ex: int x = 10; String nome = 'Renato'; double valor = 70.5; bool eAprovado = true;
 
 A interpolação, de uma maneira simplificada, serve para que o compilador processe ao invés de imprimir direto ao se usar uma marcação. Por exemplo
@@ -39,5 +50,21 @@ print('$nome'); O compilador irá processar aquela variável primeiro e então i
 
 Alguns exemplos que podemos citar sobre boas práticas: Mantenha a padronização no nome das variáveis(seja em camelCase, snake_case, etc. Escolha um e se mantenha);
 Defina o nome das variáveis e métodos em um único idioma, de preferência se puder, em inglês; Sempre declare o tipo da variável antes de dar um valor a ela.
+
+Variáveis de inferência. Uma variável que não é tipada, ela recebe seu tipo com base no valor que recebe, ou seja, é inferida a ela um tipo.
+var nome = 'João';
+
+Variáveis dinâmicas. Uma variável que altera seu tipo com base no valor que recebe, porém, diferente da de inferência, ela pode mudar seu tipo. 
+dynamic nome = 'Maria'; nome = 10;
+
+
+const final. Ambos o valor não muda, a diferença é que o const é em tempo de compilação, enquanto o final é em tempo de execução. final acaba sendo mais maleável e const
+é para mais otimização.
+cosnt int codigo = 55;
+final int codigo = 100;
+
+
+
+
 
 
