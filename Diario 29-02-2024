@@ -1,0 +1,70 @@
+
+/*
+Atividade 01
+a) Solicite 2 notas de avaliações e calcule a média; 
+b) Refaça o exercício anterior validado se as notas informadas são válidas (de 0 à 10);
+c) Com a média calculada, verifique se o aluno está aprovado (maior ou igual à 6).
+d) Faça 3 exemplos do seu projeto.
+*/
+
+a)
+main(){
+  print('Calculo da média');
+  print('digite a primeira nota: ');
+  var entradaNota1 = stdin.readLineSync()!;
+  print('digite a segunda nota: ');
+  var entradaNota2 = stdin.readLineSync()!;
+  var nota1 = int.parse(entradaNota1);
+  var nota2 = int.parse(entradaNota2);
+  print('A primeira nota é $nota1 e a segunda é $nota2');
+  var media = (nota1+nota2)/2;
+  print('A média entre as duas notas é $media');
+}
+
+b)
+main(){
+  print('Calculo da média');
+  print('digite a primeira nota: ');
+  var entradaNota1 = stdin.readLineSync()!;
+  print('digite a segunda nota: ');
+  var entradaNota2 = stdin.readLineSync()!;
+  var nota1 = int.parse(entradaNota1);
+  var nota2 = int.parse(entradaNota2);
+  if (nota1 < 0 || nota1 > 10 && nota2 < 0 || nota2 > 10)
+  {
+    print('Dados inválidos');
+  }
+  else
+  {
+  print('A primeira nota é $nota1 e a segunda é $nota2');
+  var media = (nota1+nota2)/2;
+  print('A média entre as duas notas é $media');
+  }
+}
+
+c)
+main() {
+  print('Calculo da média');
+  print('digite a primeira nota: ');
+  var entradaNota1 = stdin.readLineSync()!;
+  print('digite a segunda nota: ');
+  var entradaNota2 = stdin.readLineSync()!;
+  var nota1 = int.parse(entradaNota1);
+  var nota2 = int.parse(entradaNota2);
+  if (nota1 < 0 || nota1 > 10 && nota2 < 0 || nota2 > 10) {
+    print('Dados inválidos');
+  } else {
+    print('A primeira nota é $nota1 e a segunda é $nota2');
+    var media = (nota1 + nota2) / 2;
+    print('A média entre as duas notas é $media');
+    if (media > 6) {
+      print('aluno aprovado');
+    } else {
+      print('aluno reprovado');
+    }
+  }
+}
+
+
+
+!(bang) é um opeardor que se usa no dart para que a linguagem não impeça que o programa execute, é ocmo
