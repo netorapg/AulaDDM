@@ -136,6 +136,70 @@ main() {
 }
 
 
+//Separar a tecnologia da regra de negócio
+
+void primeiroPrint() {}
+
+int nota1() {
+  var entradaNota1 = stdin.readLineSync()!;
+  var trataNota1 = int.parse(entradaNota1);
+  return trataNota1;
+}
+
+int nota2() {
+  var entradaNota2 = stdin.readLineSync()!;
+  var trataNota2 = int.parse(entradaNota2);
+  return trataNota2;
+}
+
+dadosValidos(x, y) {
+  var xy;
+  if (x < 0 || x > 10 && y < 0 || y > 10) {
+    var xy = false;
+  } else {
+    var xy = true;
+  }
+  return xy;
+}
+
+double calculoMedia(x, y) {
+  var media = (x + y) / 2;
+  return media;
+}
+
+aprovado(x) {
+  var aprovado;
+  if (x > 6) {
+    aprovado = true;
+  } else {
+    aprovado = false;
+  }
+  return aprovado;
+}
+
+main() {
+  print('Calculo da média');
+  print('digite a primeira nota: ');
+  var x = nota1();
+  print('digite a segunda nota: ');
+  var y = nota2();
+  dadosValidos(x, y);
+  if (dadosValidos(x, y) == false) {
+    print("Dados Inválidos");
+  } else {
+    print("A primeira nota é $x e asegunda é $y");
+  }
+  var z = calculoMedia(x, y);
+  print('A média entre as duas notas é $z');
+  aprovado(z);
+  if (aprovado(z) == true) {
+    print("aprovado");
+  } else {
+    print("reprovado");
+  }
+}
+
+
 
 
 Null Safety
