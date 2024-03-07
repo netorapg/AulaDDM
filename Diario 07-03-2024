@@ -1,0 +1,24 @@
+main() {
+  print ('aula');
+  funcao(5, "dart");
+}
+
+void funcao(int x, String y){
+  print("variável x é $x e y é $y");
+  print('o aluno está ${ehAprovado(6, 7)}');
+}
+
+
+bool ehAprovado(double nota1, double nota2,[double mediaAprovacao = 6, int faltasMaxima = 10]){
+  var media = (nota1 + nota2) / 2;
+  return (media >= mediaAprovacao);
+}
+
+Coisa legal que aprendi hoje: Muitas linguagens de programação possui um tratamento de "parâmetros opcionais". Em dart, por exemplo, para tratar um parâmetro como
+opcional, coloca-se [] entre o parâmetro, como por exemplo funcao(x, y, [z]). Isso torna o código muito mais flexível e adaptativo para diferentes cenários.
+
+
+
+
+Atividade 01 - Parâmetros Posicionais
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
