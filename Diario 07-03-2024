@@ -18,7 +18,13 @@ Coisa legal que aprendi hoje: Muitas linguagens de programação possui um trata
 opcional, coloca-se [] entre o parâmetro, como por exemplo funcao(x, y, [z]). Isso torna o código muito mais flexível e adaptativo para diferentes cenários.
 
 
+Parâmetros Posicionais e Nomeados
+Posicionais: Obrigatórios, sua posição importa.
+Nomeados: Não Obrigatórios, sua posição não importa.
 
 
 Atividade 01 - Parâmetros Posicionais
 - Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+
+
