@@ -30,3 +30,34 @@ Atividade 01 - Parâmetros Posicionais
 
 
 
+void funcao(int x, String y){
+  print("variável x é $x e y é $y");
+  print('o aluno está ${ehAprovado(nota1: 6, nota2: 7, faltas: 5, mediaAprovacao: 6, faltasMaxima: 10)}');
+  funcaoParamNomeado(idade: 22, nome: 'Renato');
+  funcaoParamNomeado(nome: 'Carla', idade: 21);
+  funcaoParamNomeado(nome: 'Rafael');
+  funcaoParamNomeado(idade: 23);
+  print('${funcaoVoxa("Renato", "22", "Masculino")}');
+  print('${funcaoVoxa("Rafael", "20")}');
+
+}
+
+
+void funcaoParamNomeado({int idade = 0, String nome= "Mario"}){
+  print('nome: $nome, idade $idade');
+}
+
+bool ehAprovado(
+  {required double nota1, 
+  required double nota2,
+  required faltas,
+  double mediaAprovacao = 6, 
+  int faltasMaxima = 10}){
+  var media = (nota1 + nota2) / 2;
+  var ehAprovadoNota = (media >= mediaAprovacao);
+  var ehAprovadoFaltas = faltas <= faltasMaxima;
+  return ehAprovadoNota && ehAprovadoFaltas;
+}
+
+
+
