@@ -61,7 +61,8 @@ bool ehAprovado(
 
 
 
-Atividade 01 - Parâmetros Posicionais
+##Atividade 01 - Parâmetros Posicionais
+´´´dart
 main() {
   funcaoVoxaPosicional("Renato", 22);
 
@@ -69,7 +70,6 @@ main() {
 void funcaoVoxaPosicional(String nome, int idade){
   print('nome do sacoleiro é $nome e a idade é $idade');
 }
-
 main() {
   funcaoVoxaPosicional("Camisa", "GG", "Algodão");
 
@@ -85,10 +85,10 @@ main() {
 void funcaoVoxaPosicional(String cor, bool disponivel){
   print('A peça é da cor $cor e está $disponivel');
 }
+´´´
 
 
-
-
+´´´dart
 Atividade 02 - Parâmetros Opcionais
 main() {
   funcaoVoxaOpcional("Renato", 22, "Masculino");
@@ -113,9 +113,9 @@ main() {
 void funcaoVoxaOpcional(String pecaDeRoupa, String tamanho, String material, [bool disponivel = true, String? cor]){
   print('A peça é uma $pecaDeRoupa de tamanho $tamanho feita de $material e da cor $cor. sua disponibilidade é $disponivel');
 }
+´´´
 
-
-
+´´´dart
 Atividade 03 - Parâmetros Nomeados
 main() {
   funcaoVoxaNomeado(nome: "Renato", idade: 22, sexo: "Masculino");
@@ -148,7 +148,7 @@ required String tamanho,
 String material = "Algodão", String? cor}){
   print('a peça é uma $pecaDeRoupa de tamanho $tamanho feita de $material. Sua cor é $cor');
 }
-
+´´´
 Atividade 04 - Parâmetros do Tipo Função
 - Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
 	
