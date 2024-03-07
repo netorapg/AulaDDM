@@ -65,12 +65,29 @@ Atividade 01 - Parâmetros Posicionais
 main() {
   funcaoVoxaPosicional("Renato", 22);
 
-
+}
 void funcaoVoxaPosicional(String nome, int idade){
   print('nome do sacoleiro é $nome e a idade é $idade');
 }
- 
+
+main() {
+  funcaoVoxaPosicional("Camisa", "GG", "Algodão");
+
 }
+void funcaoVoxaPosicional(String pecaDeRoupa, String tamanho, String material){
+  print('A peça é uma $pecaDeRoupa, de tamanho $tamanho feita de $material');
+}
+
+main() {
+  funcaoVoxaPosicional("Terracota", false);
+
+}
+void funcaoVoxaPosicional(String cor, bool disponivel){
+  print('A peça é da cor $cor e está $disponivel');
+}
+
+
+
 
 Atividade 02 - Parâmetros Opcionais
 main() {
@@ -79,6 +96,22 @@ main() {
 }
 void funcaoVoxaOpcional(String nome, int idade, [String? sexo]){
   print('nome do sacoleiro é $nome e a idade é $idade e seu sexo é $sexo');
+}
+
+main() {
+  funcaoVoxaOpcional("Camisa", "GG", "Algodão", "Terracota");
+  funcaoVoxaOpcional("Colete", "G", "Jeans");
+}
+void funcaoVoxaOpcional(String pecaDeRoupa, String tamanho, String material, [String? cor]){
+  print('A peça é uma $pecaDeRoupa de tamanho $tamanho feita de $material e da cor $cor');
+}
+
+main() {
+  funcaoVoxaOpcional("Camisa", "GG", "Algodão");
+  funcaoVoxaOpcional("Colete", "G", "Jeans", false, "Preto");
+}
+void funcaoVoxaOpcional(String pecaDeRoupa, String tamanho, String material, [bool disponivel = true, String? cor]){
+  print('A peça é uma $pecaDeRoupa de tamanho $tamanho feita de $material e da cor $cor. sua disponibilidade é $disponivel');
 }
 
 
@@ -94,7 +127,27 @@ void funcaoVoxaNomeado({String nome = "Nilson", int idade = 70, String sexo = "M
   print('nome do sacoleiro é $nome e a idade é $idade e seu sexo é $sexo');
 }
 
+main() {
+  funcaoVoxaNomeado(pecaDeRoupa: "Camisa", tamanho: "GG");
+  funcaoVoxaNomeado(pecaDeRoupa: "Colete", tamanho: "G", material: "Jeans");
+  
+}  
 
+void funcaoVoxaNomeado({required String pecaDeRoupa, required String tamanho, String material = "Algodão"}){
+  print('a peça é uma $pecaDeRoupa de tamanho $tamanho feita de $material');
+}
+
+main() {
+  funcaoVoxaNomeado(pecaDeRoupa: "Camisa", tamanho: "GG", cor: "Terracota");
+  funcaoVoxaNomeado(pecaDeRoupa: "Colete", tamanho: "G", material: "Jeans");
+  
+}  
+
+void funcaoVoxaNomeado({required String pecaDeRoupa, 
+required String tamanho, 
+String material = "Algodão", String? cor}){
+  print('a peça é uma $pecaDeRoupa de tamanho $tamanho feita de $material. Sua cor é $cor');
+}
 
 Atividade 04 - Parâmetros do Tipo Função
 - Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
