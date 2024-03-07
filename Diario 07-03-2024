@@ -61,3 +61,46 @@ bool ehAprovado(
 
 
 
+Atividade 01 - Parâmetros Posicionais
+main() {
+  funcaoVoxaPosicional("Renato", 22);
+
+
+void funcaoVoxaPosicional(String nome, int idade){
+  print('nome do sacoleiro é $nome e a idade é $idade');
+}
+ 
+}
+
+Atividade 02 - Parâmetros Opcionais
+main() {
+  funcaoVoxaOpcional("Renato", 22, "Masculino");
+  funcaoVoxaOpcional("Rafael", 20);
+}
+void funcaoVoxaOpcional(String nome, int idade, [String? sexo]){
+  print('nome do sacoleiro é $nome e a idade é $idade e seu sexo é $sexo');
+}
+
+
+
+Atividade 03 - Parâmetros Nomeados
+main() {
+  funcaoVoxaNomeado(nome: "Renato", idade: 22, sexo: "Masculino");
+  funcaoVoxaNomeado(idade: 20, nome: "Rafael");
+  funcaoVoxaNomeado();
+}  
+
+void funcaoVoxaNomeado({String nome = "Nilson", int idade = 70, String sexo = "Masculino"}){
+  print('nome do sacoleiro é $nome e a idade é $idade e seu sexo é $sexo');
+}
+
+
+
+Atividade 04 - Parâmetros do Tipo Função
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+	
+Atividade 05 - Funções Anônimas
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+
+
