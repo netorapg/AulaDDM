@@ -1,1 +1,126 @@
+```dart
+import 'package:flutter/material.dart';
+import 'package:voxa/app.dart';
+import 'package:voxa/widget/lista_aluno.dart';
+
+void main() {
+  runApp(App());
+}
+```
+```dart
+import 'package:flutter/material.dart';
+import 'package:voxa/rota.dart';
+import 'package:voxa/widget/principal.dart';
+import 'package:voxa/widget/formulario_aluno.dart';
+import 'package:voxa/widget/lista_aluno.dart';
+
+class App extends StatelessWidget{
+  @override
+  Widget build (BuildContext context){
+    return MaterialApp(
+      title: 'Meu App',
+      debugShowCheckedModeBanner: true,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),
+        useMaterial3: false,
+      ),
+      routes: {
+        Rota.home :(context) => Principal(),
+        Rota.formAluno:(context) => FormularioAluno(),
+        Rota.listaAluno:(context) => ListaAluno()
+      },
+    );
+  }
+}
+```
+```dart
+import 'package:flutter/material.dart';
+import 'package:voxa/rota.dart';
+import 'package:voxa/utilitarios.dart';
+
+class Principal extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Tela principal"),
+      ),
+      body: Column(
+        children: [
+          Utilitarios().criarBotaoDeNavegacao(
+              nome: 'Form Aluno', contexto: context, rota: Rota.formAluno),
+          Utilitarios().criarBotaoDeNavegacao(
+              nome: 'Lista Aluno', contexto: context, rota: Rota.listaAluno)
+        ],
+      ),
+    );
+  }
+}
+```
+```dart
+import 'package:flutter/material.dart';
+
+class FormularioAluno extends StatelessWidget {
+  const FormularioAluno({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Form Aluno')),
+      body: const Text('Formulario Aluno'),
+    );
+  }
+}
+```
+```dart
+import 'package:flutter/material.dart';
+import 'package:voxa/app.dart';
+import 'package:voxa/rota.dart';
+import 'package:voxa/utilitarios.dart';
+import 'package:voxa/widget/formulario_aluno.dart';
+
+class ListaAluno extends StatelessWidget {
+  const ListaAluno({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Lista Aluno')),
+      body: Column(
+        children: [
+          const Text('Lista Aluno'),
+          Utilitarios()
+              .criarBotaoDeRetorno(nome: 'Voltar', contexto: context),
+          Utilitarios().
+          criarBotaoDeNavegacao(nome: 'home', contexto: context, rota: Rota.home)
+        ],
+      ),
+    );
+  }
+}
+```
+
+```dart
+import 'package:flutter/material.dart';
+
+class Utilitarios {
+
+  Widget criarBotaoDeNavegacao({required nome, required contexto, required rota}) {
+    return ElevatedButton(
+      child: Text(nome),
+      onPressed: () {
+        Navigator.pushNamed(contexto, rota);
+      },
+    );
+  }
+  Widget criarBotaoDeRetorno({required nome, required contexto}){
+        return ElevatedButton(onPressed: () => Navigator.pop(contexto),
+        child: Text(nome)
+        );
+          }
+
+}
+
+```
+
+
+
 
